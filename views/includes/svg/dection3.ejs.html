@@ -1,0 +1,90 @@
+<div class="section3 d-flex wrapper">
+    <div class="season_container">
+        <div>
+            <h2 class="season">
+                <%=match.sonseat%>
+            </h2>
+        </div>
+        <p>
+            <%=match.ekstra%>
+        </p>
+    </div>
+    <div>
+        <div class="circle_container">
+            <p>
+                <%=match.toptext%>
+            </p>
+            <div class="gra_circle">
+                <div class="fa_circle">
+                    <div class="son_circle"></div>
+                </div>
+            </div>
+            <div class="img_container">
+                <img src="<%=match.src_img%>" alt="">
+
+            </div>
+            <div class="text_roman_container">
+                <div>
+                    <h3 class="roman">
+                        <%=match.roman%>
+                    </h3>
+                </div>
+                <div>
+                    <p>
+                        <%=match.ten%>
+                    </p>
+                    <p>
+                        <%=match.goals%>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="num_stru">
+        <div>
+            <% for( let index = 0; index < match.texn1.length; index++ ) { %>
+                <div>
+                    <p>
+                        <%=match.texn1[index]%>
+
+                    </p>
+                    <p>
+                        <%=match.tex2[index]%>
+
+                    </p>
+                </div>
+                <% } %>
+
+        </div>
+        <div>
+            <div>
+                <h2>
+                    <%=match.texn%>
+
+                </h2>
+                <p>
+                    <%=match.tex%>
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <% for( let index = 0; index < match.texn2.length; index++ ) { %>
+                <div>
+                    <p>
+                        <%=match.texn2[index]%>
+
+                    </p>
+                    <p>
+                        <%=match.tex3[index]%>
+
+                    </p>
+                </div>
+                <% } %>
+
+        </div>
+
+
+    </div>
+</div>

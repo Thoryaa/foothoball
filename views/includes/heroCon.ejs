@@ -1,0 +1,223 @@
+<div class="heroCon  d-flex p-relative">
+    <div class="mtContainer">
+        <div class="mtitle">
+            <div class="hero">
+
+                <div class="match-part">
+                    <div>
+                        <h2>match schedule</h2>
+                    </div>
+                    <div class="d-flex">
+                        <ion-icon name="print"></ion-icon>
+                        <div class="line-under-container">
+                            <a href="">more</a> <span class="line-under"></span>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class='cards-container wrapper d-flex '>
+            <div class='card-container '>
+                <div>
+                    <img src="img/1646849726470.jpeg" alt=" ">
+                </div>
+                <div>
+                    <h5>latest new</h5>
+                    <div>
+                        <h2>roman <br> gergel scorer 4 gols</h2>
+                    </div>
+                    <div class="more">
+                        <ion-icon name="camera-outline"></ion-icon>
+                        <a href=" ">more</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class='card-container '>
+                <div>
+                    <img src="img/1646849726470.jpeg" alt=" ">
+                </div>
+                <div>
+                    <h5> teams</h5>
+                    <div>
+                        <h2>line-up for <br> the upcoming match</h2>
+                    </div>
+                    <div class='more '>
+                        <ion-icon name="reader-outline"></ion-icon> <a href=" ">more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="wrapper">
+        <div class="d-flex  timeMatch">
+            <div class="match-club">
+
+                <div class="club">
+                    <div>
+                        <h5 class="match.match_club_title">
+                            <%=match.match_club_title[0]%>
+                        </h5>
+                    </div>
+                    <div class="match-container">
+                        <div class='match-result'>
+                            <div class="group-info  logo">
+                                <div>
+                                    <ion-icon name="<%=match. group_one_icon[0]%>" class='<%=match.group_one_icon[0]%>'></ion-icon>
+
+                                    <%-include("./svg/gorSvg.ejs")%>
+
+                                </div>
+                                <p>
+                                    <%=match.group_one[0]%>
+                                </p>
+                            </div>
+                            <div>
+                                <%=match.num1[0]%>
+                            </div>
+                        </div>
+                        <div>
+                            <%=match.special[0]%>
+                        </div>
+                        <div class=' match-result '>
+                            <div>
+                                <%=match.num2[0]%>
+                            </div>
+                            <div class="group-info  logo" style="text-transform: lowercase;">
+                                <ion-icon name="<%=match.group_two_icon[0]%>" class='<%=match.group_two_icon[0]%>'></ion-icon>
+                                <%-include("./svg/slask.ejs")%>
+                                    <p>
+                                        <%=match.group_two[0]%>
+
+                                    </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="zab-title">
+                            <%=match.match_ht[0]%>
+
+                        </h4>
+                        <p class="date">
+                            <%=match.match_tail[0]%>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="match-club">
+
+                <div class="club">
+                    <div>
+                        <h5 class="match.match_club_title">
+                            <%=match.match_club_title[1]%>
+                        </h5>
+                    </div>
+                    <div class="match-container">
+                        <div class='match-result'>
+                            <div class="group-info  logo">
+                                <div>
+                                    <ion-icon name="<%=match. group_one_icon[1]%>" class='<%=match.group_one_icon[1]%>'></ion-icon>
+
+                                    <%-include("./svg/legal.ejs")%>
+
+                                </div>
+                                <p>
+                                    <%=match.group_one[1]%>
+                                </p>
+                            </div>
+                            <div>
+                                <%=match.num1[1]%>
+                            </div>
+                        </div>
+                        <div>
+                            <%=match.special[1]%>
+                        </div>
+                        <div class=' match-result '>
+                            <div>
+                                <%=match.num2[1]%>
+                            </div>
+                            <div class="group-info  logo" style="text-transform: lowercase;">
+                                <ion-icon name="<%=match.group_two_icon[1]%>" class='<%=match.group_two_icon[1]%>'></ion-icon>
+                                <%-include("./svg/gorSvg.ejs")%>
+                                    <p>
+                                        <%=match.group_two[1]%>
+
+                                    </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="zab-title">
+                            <%=match.match_ht[1]%>
+
+                        </h4>
+                        <p class="date">
+                            <%=match.match_tail[1]%>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="match-club">
+
+                <div class="club">
+                    <div>
+                        <h5 class="match.match_club_title">
+                            <%=match.match_club_title[2]%>
+                        </h5>
+                    </div>
+                    <div class="match-container">
+                        <div class='match-result'>
+                            <div class="group-info  logo">
+                                <div>
+                                    <ion-icon name="<%=match. group_one_icon[2]%>" class='<%=match.group_one_icon[2]%>'></ion-icon>
+
+                                    <%-include("./svg/legal.ejs")%>
+
+                                </div>
+                                <p>
+                                    <%=match.group_one[2]%>
+                                </p>
+                            </div>
+                            <div>
+                                <%=match.num1[2]%>
+                            </div>
+                        </div>
+                        <div>
+                            <%=match.special[2]%>
+                        </div>
+                        <div class=' match-result '>
+                            <div>
+                                <%=match.num2[2]%>
+                            </div>
+                            <div class="group-info  logo" style="text-transform: lowercase;">
+                                <ion-icon name="<%=match.group_two_icon[2]%>" class='<%=match.group_two_icon[2]%>'></ion-icon>
+                                <%-include("./svg/gorSvg.ejs")%>
+                                    <p>
+                                        <%=match.group_two[2]%>
+
+                                    </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="zab-title">
+                            <%=match.match_ht[2]%>
+
+                        </h4>
+                        <p class="date">
+                            <%=match.match_tail[2]%>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

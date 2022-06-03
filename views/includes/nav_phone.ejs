@@ -1,0 +1,41 @@
+<!--nav [phone]-->
+<nav class="Nav-phone d-flex">
+    <div class="navigation">
+        <ul class="links navigationmenu">
+            <li>
+                <div class="search-box">
+                    <button class="btn-search">    <ion-icon name="search" class="search"></ion-icon>
+</button>
+                    <input type="text" class="input-search" placeholder="Search about...">
+                </div>
+            </li>
+            <% for( let index = 0; index < match.desk_nav_menu.length; index++ ) 
+            { %>
+                <li>
+                    <a href="">
+                        <%= match.desk_nav_menu[index]%>
+                    </a>
+                </li>
+                <% } %>
+
+        </ul>
+        <div class="menu-toggle"></div>
+
+
+    </div>
+
+
+    </div>
+    <div class="logo d-flex p-relative">
+        <ion-icon name="star" class='star'></ion-icon>
+        <%-include('./svg/gorSvg.ejs')%>
+
+    </div>
+
+    <div class="search-box">
+        <button class="btn-search">    <ion-icon name="search" class="search"></ion-icon>
+        </button>
+        <input type="text" class="input-search" placeholder="Search about...">
+    </div>
+
+</nav>

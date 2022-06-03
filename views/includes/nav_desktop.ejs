@@ -1,0 +1,59 @@
+<!--nav [Desktop]-->
+<nav class="Nav-dsktop">
+    <div class="left-nav ">
+        <div class="d-flex">
+            <ion-icon name="star" class='star'></ion-icon>
+
+            <%-include('./svg/gorSvg.ejs')%>
+
+
+        </div>
+        <div class=" zabraze d-flex">
+            <h3>
+                <%= match.title%>
+            </h3>
+            <span>
+                <%= match.office%>
+            </span>
+        </div>
+    </div>
+    <div class="right-nav ">
+        <div>
+            <div></div>
+            <div>
+                <%-include('./svg/adidas.ejs')%>
+
+            </div>
+            <div>
+                <%-include('./svg/alinaz.ejs')%>
+
+            </div>
+            <div class="lang  d-flex">
+                <h3>
+                    <%=match.en%>
+                </h3>
+                <ion-icon name="chevron-down"></ion-icon>
+            </div>
+            <div></div>
+
+        </div>
+
+        <ul class="links d-flex ">
+            <% for( let index = 0; index < match.desk_nav_menu.length; index++ ) 
+            { %>
+                <li>
+                    <a href="">
+                        <%= match.desk_nav_menu[index]%>
+                    </a>
+                </li>
+                <% } %>
+                    <li>
+                        <div class="search-box">
+                            <button class="btn-search">    <ion-icon name="search" class="search"></ion-icon>
+        </button>
+                            <input type="text" class="input-search" placeholder="Search about...">
+                        </div>
+                    </li>
+        </ul>
+    </div>
+</nav>

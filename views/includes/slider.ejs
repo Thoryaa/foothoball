@@ -1,0 +1,74 @@
+<main>
+    <div class="line"></div>
+    <div class="line2 line"></div>
+    <div class="svg-container">
+        <div class="svg">
+
+            <%-include("./svg/facebook.ejs")  %>
+
+        </div>
+        <div class="svg">
+            <%-include("./svg/twitter.ejs")  %>
+
+        </div>
+        <div class="svg">
+            <%-include("./svg/google.ejs")  %>
+
+
+
+        </div>
+        <div class="svg">
+            <%-include("./svg/youtube.ejs")  %>
+        </div>
+
+    </div>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <% for( let index = 0; index < match.button_text.length; index++ ) { %>
+
+
+            <div class="mySlides fade  ">
+                <div class="first">
+                    <div class="content-slider-text">
+
+                        <button class="club-btn"><%=match.button_text[index]%></button>
+
+
+                        <div class="text-container">
+                            <h2>
+                                <%=match.text_cont[index]%>
+                            </h2>
+                        </div>
+                        <div class="d-flex">
+                            <ion-icon name="print-outline"></ion-icon>
+                            <div class="line-under-container">
+                                <a href="">more</a> <span class="line-under"></span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image_slider image_slider<%=index%>">
+                        <img src="<%=match.img_slide[index]%>" alt="">
+                    </div>
+
+                    <div class="index">
+                        <%='0'+(index+1)%>
+                    </div>
+
+                </div>
+            </div>
+            <% } %>
+
+
+
+                <!-- The dots/circles -->
+                <div class="dots-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+    </div>
+</main>
